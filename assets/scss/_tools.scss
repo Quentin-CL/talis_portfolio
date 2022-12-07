@@ -1,0 +1,16 @@
+#tools{
+    padding: 4rem 1rem;
+}
+.grid-container{
+    display: grid;
+    grid-template: 1fr 1fr/ repeat(4, 100px) ;
+    place-items: center;
+    place-content: center;
+    gap: 32px;
+    img{
+        width: 100%;
+        object-fit: cover;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        };
+}

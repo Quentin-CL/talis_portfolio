@@ -1,0 +1,13 @@
+footer{
+    text-align: center;
+    @include flex;
+    gap: 3rem;
+    padding: 4rem 1rem;
+    background-color: $gray2;
+    p,i{
+        color: white;
+    }
+    i:first-of-type{
+        margin-right: 1rem  ;
+    }
+}

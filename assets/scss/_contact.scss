@@ -1,0 +1,42 @@
+#contact{
+    padding: 4rem 1rem;
+    form{
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(4, max-content) / 1fr 1fr;
+        gap: 1rem;
+        >div{
+            width: 100%;
+            @include flex(start, start, column);
+            gap: 7px;
+        }
+        input, textarea{
+            box-sizing: border-box;
+            padding: 10px;
+            width: 100%;
+            &::placeholder{
+                font-family: "indo";
+            }
+        }
+    }
+    button{
+        grid-column: 1 / span 2;
+        justify-self: center; 
+        padding: 10px 20px;
+        background-color: $gray2;
+        border: 1px solid $gray2;
+        border-radius: 3px;
+        color: white;
+        font-weight: 700;
+        transition: background-color 0.5s;
+        &:hover{
+            color: $gray2 ;
+            background-color: white;
+            cursor: pointer;
+        }
+    }
+}
+.contact-message{
+    grid-column: 1 / span 2;
+}
