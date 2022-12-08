@@ -282,6 +282,7 @@ nav i {
   flex-direction: column;
   justify-self: center;
   max-width: 500px;
+  width: 100%;
 }
 .project-titles span {
   margin-bottom: auto;
@@ -678,6 +679,14 @@ footer i:first-of-type {
   }
   .contact-message {
     grid-column: 1;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  #projects article {
+    gap: 8rem;
+  }
+  .project-titles {
+    justify-self: end;
   }
 }
 

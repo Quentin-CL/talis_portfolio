@@ -22,6 +22,7 @@
     @include flex(center,flex-start,column);
     justify-self: center;
     max-width: 500px;
+    width: 100%;
     span{
         margin-bottom: auto;
         color: white;

@@ -85,3 +85,14 @@
     }
 
 }
+
+@include mq("desktop-wide"){
+    #projects{
+        article{
+            gap: 8rem;
+        }
+    }
+    .project-titles{
+        justify-self: end;
+    }
+}
