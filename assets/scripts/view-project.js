@@ -5,7 +5,7 @@ let speed = 0.01;
 
 
 
-
+// Setup the cursor tracker on all the articles with a recursive function
 articles.forEach((article, i) => {
     let [offsetTop, offsetLeft, mouseX, mouseY, cursorX, cursorY, rotate] = initializePosition(article);
     function animate() {
@@ -22,18 +22,27 @@ articles.forEach((article, i) => {
     }
     animate();
 
+    // Retrieve the postion of the mouse whenever the mouse move in the article
     article.addEventListener('mousemove', (event) => {
         mouseX = event.pageX;
         mouseY = event.pageY;
     })
+
+    // Reset the position of the buttons when the mouse leave the article
     article.addEventListener('mouseleave', () => {
         res = initializePosition(article);
         mouseX = res[2];
         mouseY = res[3];
     })
+
+    // Reset the positions of buttons and adjust offsets when the window is resized
+    window.addEventListener('resize', () => {
+        res = initializePosition(article);
+        [offsetTop, offsetLeft, mouseX, mouseY] = res
+    })
 })
 
-
+// Initialize the position of buttons
 function initializePosition(container) {
     const offsetTop = container.offsetTop;
     const offsetLeft = container.offsetLeft;
@@ -44,28 +53,3 @@ function initializePosition(container) {
     let rotate = 0;
     return [offsetTop, offsetLeft, mouseX, mouseY, cursorX, cursorY, rotate]
 }
-
-function readSingleFile(e) {
-    var file = e.target.files[0];
-    if (!file) {
-        return;
-    }
-    var reader = new FileReader();
-    reader.onload = function (e) {
-        var contents = e.target.result;
-        displayContents(contents);
-    };
-    reader.readAsText(file);
-}
-
-function displayContents(contents) {
-    var element = document.getElementById('file-content');
-    element.textContent = contents;
-}
-
-buttons[1].addEventListener("click", () => {
-    window.open("file:///C:/Users/quent/Documents/Pole_emploi/Formation/Projet/JS/2_pokemon/index.html", "_self");
-})
-
-
-

@@ -71,10 +71,3 @@ function updateStars() {
     });
     window.requestAnimationFrame(updateStars);
 }
-
-title.addEventListener('mouseenter', () => {
-    starsParams.speed = 15;
-})
-title.addEventListener('mouseleave', () => {
-    starsParams.speed = 0.5;
-})
