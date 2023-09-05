@@ -7,6 +7,13 @@
     .swiper{
         width: 490px;
     }
+    .text-slide{
+        font-size: 1rem;
+    }
+    .slide-title{
+        font-size: 1rem;
+        line-height: normal;
+    }
 }
 @include mq("tablet", max){
     #projects{
@@ -78,6 +85,9 @@
         grid-template: repeat(4,1fr)/ repeat(2, 100px) ;
         column-gap: 3rem;
         row-gap: 0;
+    }
+    .page-description{
+        display: none;
     }
 }
 @include mq("phone-wide", max){

@@ -1,14 +1,9 @@
 var swiper = new Swiper(".mySwiper", {
-    autoHeight: true,
+    // autoHeight: true,
     pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,
     },
-    // breakpoints: {
-    //     100: {
-    //         width: auto,
-    //     },
-    // }
 });
 
 

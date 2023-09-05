@@ -23,7 +23,7 @@
     max-width: 500px;
     width: 100%;
     height: 100%;
-    span{
+    >span{
         margin-right: auto;
         margin-bottom: auto;
         color: white;
@@ -90,7 +90,7 @@
 }
 
 @mixin apply-color ($color){
-    span{
+    .project-titles span{
         background-color: $color ;
     }
     .btn-project{
