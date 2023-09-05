@@ -50,10 +50,10 @@ articles.forEach((article, i) => {
 // Initialize the position of buttons
 function initializePosition(container) {
     const offsetTop = container.parentElement.offsetTop;
-    const offsetLeft = container.offsetLeft;
-    let mouseX = offsetLeft + container.clientWidth * 0.2;
+    const offsetLeft = container.parentElement.offsetLeft;
+    let mouseX = offsetLeft + container.parentElement.clientWidth * 0.25;
     let mouseY = offsetTop + container.clientHeight;
-    let cursorX = container.clientWidth * 0.2;
+    let cursorX = container.parentElement.clientWidth * 0.25;
     let cursorY = container.clientHeight;
     let rotate = 0;
     return [offsetTop, offsetLeft, mouseX, mouseY, cursorX, cursorY, rotate]

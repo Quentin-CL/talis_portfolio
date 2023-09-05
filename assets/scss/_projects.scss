@@ -5,7 +5,7 @@
         display: grid;
         gap: 10px;
         margin-bottom: 6rem;
-        grid-template: 1fr /  1fr 1.5fr;
+        grid-template: 1fr /  1fr 1fr;
         >div:last-child{
             grid-column-start:2 ;
             max-width: 700px;
@@ -18,12 +18,13 @@
 .project-titles{
     text-align: center;
     grid-column-start:1 ;
-    @include flex(center,flex-start,column);
+    @include flex(center,center,column);
     justify-self: center;
     max-width: 500px;
     width: 100%;
     height: 100%;
     span{
+        margin-right: auto;
         margin-bottom: auto;
         color: white;
         padding: 10px 20px;
@@ -48,6 +49,11 @@
 .view-project{
     position: absolute;
     transform: translate(-50%,-50%);
+}
+.view-project-zone{
+    justify-self: end;
+    max-width: 500px;
+    width: 100%;
 }
 .btn-project {
     background: none;
@@ -124,7 +130,7 @@
   }
 
   .swiper-slide {
-
+    width: 50%;
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -132,6 +138,7 @@
     justify-content: center;
     align-items: center;
   }
+
 
   .swiper-slide img {
     display: block;

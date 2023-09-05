@@ -210,7 +210,6 @@ nav i {
   left: 0;
   background-color: #383b3c;
   height: 100vh;
-  width: 20vw;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -263,7 +262,7 @@ nav i {
   display: grid;
   gap: 10px;
   margin-bottom: 6rem;
-  grid-template: 1fr/1fr 1.5fr;
+  grid-template: 1fr/1fr 1fr;
 }
 #projects article > div:last-child {
   grid-column-start: 2;
@@ -278,7 +277,7 @@ nav i {
   grid-column-start: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-self: center;
   max-width: 500px;
@@ -286,6 +285,7 @@ nav i {
   height: 100%;
 }
 .project-titles span {
+  margin-right: auto;
   margin-bottom: auto;
   color: white;
   padding: 10px 20px;
@@ -310,6 +310,12 @@ nav i {
 .view-project {
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+.view-project-zone {
+  justify-self: end;
+  max-width: 500px;
+  width: 100%;
 }
 
 .btn-project {
@@ -409,6 +415,7 @@ nav i {
 }
 
 .swiper-slide {
+  width: 50%;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -720,14 +727,14 @@ footer i:first-of-type {
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 559px) {
-  h1 {
-    font-size: 50px;
+@media only screen and (max-width: 1023px) {
+  .swiper {
+    width: 550px;
   }
-  .grid-container {
-    grid-template: repeat(4, 1fr)/repeat(2, 100px);
-    column-gap: 3rem;
-    row-gap: 0;
+}
+@media only screen and (max-width: 899px) {
+  .swiper {
+    width: 490px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -736,6 +743,12 @@ footer i:first-of-type {
   }
   #projects article div:last-child {
     grid-column-start: 1;
+  }
+  .view-project-zone {
+    justify-self: center;
+  }
+  .view-project {
+    z-index: 1000;
   }
   .project-titles {
     align-items: center;
@@ -783,7 +796,20 @@ footer i:first-of-type {
     display: block;
   }
 }
+@media only screen and (max-width: 559px) {
+  h1 {
+    font-size: 50px;
+  }
+  .grid-container {
+    grid-template: repeat(4, 1fr)/repeat(2, 100px);
+    column-gap: 3rem;
+    row-gap: 0;
+  }
+}
 @media only screen and (max-width: 479px) {
+  .swiper {
+    width: 380px;
+  }
   .project-titles h3 {
     font-size: 24px;
   }

@@ -1,11 +1,11 @@
-@include mq("phablet", max){
-    h1{
-        font-size: 50px;
+@include mq("tablet-wide", "max"){
+     .swiper{
+        width: 550px;
     }
-    .grid-container{
-        grid-template: repeat(4,1fr)/ repeat(2, 100px) ;
-        column-gap: 3rem;
-        row-gap: 0;
+}
+@include mq("custom-size", "max"){
+    .swiper{
+        width: 490px;
     }
 }
 @include mq("tablet", max){
@@ -16,6 +16,12 @@
                 grid-column-start:1 ;
             }
         }
+    }
+    .view-project-zone{
+        justify-self: center;
+    }
+    .view-project{
+        z-index: 1000;
     }
     .project-titles{
         align-items: center;
@@ -64,7 +70,20 @@
     }
 
 }
+@include mq("phablet", max){
+    h1{
+        font-size: 50px;
+    }
+    .grid-container{
+        grid-template: repeat(4,1fr)/ repeat(2, 100px) ;
+        column-gap: 3rem;
+        row-gap: 0;
+    }
+}
 @include mq("phone-wide", max){
+    .swiper{
+        width: 380px;
+    }
     .project-titles h3{
         font-size: 24px;
     }
