@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/libs/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/libs/css/bootstrap-icons.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Portfolio</title>
@@ -62,52 +64,138 @@
     </section>
     <section id="projects">
       <h2>Mes derniers projets</h2>
-      <article class="cl-blue">
-        <div class="view-project">
-          <button class="btn-project">Voir le projet</button>
-        </div>
-        <div class="project-titles">
-          <span>Videv</span>
-          <h3>Design d'une plateforme de video à la demande</h3>
+      
+      
+      <article class="cl-red">
+        <div class="view-project-zone">
+          <div class="view-project">
+            <button class="btn-project">Voir le projet</button>
+          </div>
+          <div class="project-titles">
+            <span>French Fests</span>
+            <h3>Moteur de recherche des festivals de France</h3>
+          </div>
         </div>
         <div>
-          <img src="assets/img/projects/videv.png" alt="" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/projects/ff.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/ff-2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/ff-3.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/ff-4.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/ff-5.png" alt="" /></div>
+              <div class="swiper-slide text-slide">
+                <div class="slide-content">
+                  <p class="slide-title">Le projet vise à développer un site agrégateur de festivals, intégrant les éléments suivants :</p>
+                  <ul class="slide-list">
+                    <li><strong>Page d'accueil</strong> : Cette page introduit le concept du site.</li>
+                    <li><strong>Page de la carte interactive</strong> : Cette page présente une carte interactive montrant l'emplacement des plus grands festivals de France. Chaque point sur la carte conduit à une page détaillée sur chaque festival.</li>
+                    <li><strong>Page de contact</strong> : Cette page présente les coordonnées des gestionnaires ainsi qu'un formulaire de contact.</li>
+                    <li><strong>Pages d'administration</strong> : Ces pages permettent de gérer les utilisateurs, les festivals et les commentaires. Elles offrent des fonctionnalités telles que la suppression, la mise à jour et l'ajout d'entités.</li>
+                  </ul>
+                  <p class="slide-footer">Ce projet est réalisé en HTML/CSS/Node.js.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </article>
-      <article class="cl-red">
-        <div class="view-project">
-          <button class="btn-project">Voir le projet</button>
-        </div>
-        <div class="project-titles">
-          <span>Pokemon</span>
-          <h3>Moteur de recherche de Pokemon</h3>
+
+
+      <article class="cl-blue">
+        <div class="view-project-zone">
+          <div class="view-project">
+            <button class="btn-project">Voir le projet</button>
+          </div>
+          <div class="project-titles">
+            <span>Videv</span>
+            <h3>Design d'une plateforme de video à la demande</h3>
+          </div>
         </div>
         <div>
-          <img src="assets/img/projects/pokemon.png" alt="" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/projects/videv.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/videv2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/videv3.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/videv4.png" alt="" /></div>
+              <div class="swiper-slide text-slide">
+                <div class="slide-content">
+                  <p class="slide-title">Le projet consiste à développer un site de streaming vidéo, comprenant les éléments suivants :</p>
+                  <ul class="slide-list">
+                    <li><strong>Page d'accueil</strong> : Cette page présente toutes les séries, organisées par catégories, sous la forme d'un carrousel.</li>
+                    <li><strong>Pages d'administration</strong> : Ces pages permettent de gérer les utilisateurs et les séries. Elles offrent des fonctionnalités telles que la suppression, la mise à jour et l'ajout d'entités.</li>
+                  </ul>
+                  <p class="slide-footer">Ce projet est réalisé en HTML/CSS/NodeJS</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </article>
       <article class="cl-orange">
-        <div class="view-project">
-          <button class="btn-project">Voir le projet</button>
-        </div>
-        <div class="project-titles">
-          <span>Tinker</span>
-          <h3>Integration d'une maquette</h3>
+        <div class="view-project-zone">
+          <div class="view-project">
+            <button class="btn-project">Voir le projet</button>
+          </div>
+          <div class="project-titles">
+            <span>Threads</span>
+            <h3>Integration d'une maquette</h3>
+          </div>
         </div>
         <div>
-          <img src="assets/img/projects/tinker.png" alt="" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/projects/th.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/th-2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/th3.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/th4.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/th5.png" alt="" /></div>
+              <div class="swiper-slide text-slide">
+                <div class="slide-content">
+                  <p class="slide-title">Le projet consiste à développer une réplique du site Threads, comprenant les éléments suivants :</p>
+                  <ul class="slide-list">
+                    <li><strong>Page d'accueil</strong> : Cette page présente toutes les discussions (threads). Les utilisateurs peuvent y répondre et leurs donner un like.</li>
+                    <li><strong>Pages de recherche d'utilisateurs et de communautés</strong> : Ces pages permettent de visualiser et de rechercher des utilisateurs ou des communautés.</li>
+                    <li><strong>Pages d'activités</strong> : Cette page présente toutes les activités liées aux discussions de l'utilisateur.</li>
+                    <li><strong>Pages de création de discussions</strong> : Cette page permet de créer une nouvelle discussion.</li>
+                    <li><strong>Pages de présentation des profils et des communautés</strong> : Ces pages permettent de consulter les discussions associées à un utilisateur ou à une communauté.</li>
+                  </ul>
+                  <p class="slide-footer">Ce projet est réalisé en HTML/TailwindCSS/NextJS</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </article>
       <article class="cl-yellow">
-        <div class="view-project">
-          <button class="btn-project">Voir le projet</button>
-        </div>
-        <div class="project-titles">
-          <span>The resto</span>
-          <h3>Integration d'une maquette</h3>
+        <div class="view-project-zone">
+          <div class="view-project">
+            <button class="btn-project">Voir le projet</button>
+          </div>
+          <div class="project-titles">
+            <span>The resto</span>
+            <h3>Integration d'une maquette</h3>
+          </div>
         </div>
         <div>
-          <img src="assets/img/projects/the-resto.png" alt="" />
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/projects/the-resto.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/the-resto2.png" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/projects/the-resto3.png" alt="" /></div>
+              <div class="swiper-slide text-slide">
+                <div class="slide-content">
+                  <p class="slide-title">Le projet consiste à développer le front-end d'une site de restauration à partir d'une maquette.</p>
+                  <p class="slide-footer">Ce projet est réalisé en HTML/CSS/JS</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </article>
     </section>
@@ -176,7 +264,7 @@
                 <div class="timeline-body">
                   <p>Simulation numérique CFD 3D dans le domaine de la qualité de l'air, des risques industriels et de l'optimisation de process</p>
                   <p>Simulation numérique dans le domaine des vibrations induites par les véhicules ferroviaires, les équipements techniques ou les individus</p>
-                  <p>Développement en python</p>
+                  <p>Développement en python pour le traitement de large quantité de données</p>
                 </div>
               </div>
             </div>
@@ -202,42 +290,83 @@
       </div>
     </section>
     <section id="contact">
-      <h2>Contactez-moi</h2>
-      <form action="/">
-        <div>
-          <label for="firstname">Prenom</label>
-          <input type="text" id="firstname" placeholder="Votre prénom" />
+      <div class="divider white"></div>
+      <div class="heading">
+        <h2>Contact</h2>
+      </div>
+      <div class="container">
+
+        <div class="social">
+          <!-- <a href="https://twitter.com/steve_walson" target="_blank" class="twitter">
+            <svg viewBox="126.444 2.281 589 589" height="42">
+              <title>Twitter</title>
+              <path d="M609.773 179.634c-13.891 6.164-28.811 10.331-44.498 12.204 16.01-9.587 28.275-24.779 34.066-42.86a154.78 154.78 0 0 1-49.209 18.801c-14.125-15.056-34.267-24.456-56.551-24.456-42.773 0-77.462 34.675-77.462 77.473 0 6.064.683 11.98 1.996 17.66-64.389-3.236-121.474-34.079-159.684-80.945-6.672 11.446-10.491 24.754-10.491 38.953 0 26.875 13.679 50.587 34.464 64.477a77.122 77.122 0 0 1-35.097-9.686v.979c0 37.54 26.701 68.842 62.145 75.961-6.511 1.784-13.344 2.716-20.413 2.716-4.998 0-9.847-.473-14.584-1.364 9.859 30.769 38.471 53.166 72.363 53.799-26.515 20.785-59.925 33.175-96.212 33.175-6.25 0-12.427-.373-18.491-1.104 34.291 21.988 75.006 34.824 118.759 34.824 142.496 0 220.428-118.052 220.428-220.428 0-3.361-.074-6.697-.236-10.021a157.855 157.855 0 0 0 38.707-40.158z" />
+            </svg>
+          </a> -->
+          <a tabindex='0' class="email" role="button" data-bs-toggle="popover" data-bs-title = "Adresse email"data-bs-content="quent.colombier@gmail.com" data-bs-placement="left" data-bs-trigger="focus">
+            <svg height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Email</title>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 5.25L3 6V18L3.75 18.75H20.25L21 18V6L20.25 5.25H3.75ZM4.5 7.6955V17.25H19.5V7.69525L11.9999 14.5136L4.5 7.6955ZM18.3099 6.75H5.68986L11.9999 12.4864L18.3099 6.75Z" fill="#fff"/>
+              </svg>
+          </a>
+          <a href="https://fr.linkedin.com/in/quentin-colombier-695873154" target="_blank" class="linkdin">
+            <svg role="img" viewBox="0 0 24 24" height="23">
+              <title>LinkedIn</title>
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://github.com/Quentin-CL" target="_blank" class="github">
+      
+            <svg height="25" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+              <title>Github</title>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#fff">
+                      <g id="icons" transform="translate(56.000000, 160.000000)">
+                          <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
+          
+                          </path>
+                      </g>
+                  </g>
+              </g>
+            </svg>
+      
+          </a>
+          <a tabindex="0" class="phone" role="button" data-bs-toggle="popover" data-bs-title = "Téléphone" data-bs-content="06.01.29.24.14" data-bs-placement="right" data-bs-trigger="focus">
+            <svg  height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <title>Téléphone</title>
+              <path d="M19 10V8C19 5.17157 19 3.75736 18.1213 2.87868C17.2426 2 15.8284 2 13 2H11C8.17157 2 6.75736 2 5.87868 2.87868C5 3.75736 5 5.17157 5 8V16C5 18.8284 5 20.2426 5.87868 21.1213C6.75736 22 8.17157 22 11 22H13C15.8284 22 17.2426 22 18.1213 21.1213C19 20.2426 19 18.8284 19 16V14" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M14.5 19H9.5" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M21.9999 6L21.2235 7.55279C21.0827 7.83431 21.0827 8.16569 21.2235 8.44721L21.7763 9.55279C21.917 9.83431 21.917 10.1657 21.7763 10.4472L21.2235 11.5528C21.0827 11.8343 21.0827 12.1657 21.2235 12.4472L21.7763 13.5528C21.917 13.8343 21.917 14.1657 21.7763 14.4472L21.2235 15.5528C21.0827 15.8343 21.0827 16.1657 21.2235 16.4472L21.9999 18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 6L2.77639 7.55279C2.91716 7.83431 2.91716 8.16569 2.77639 8.44721L2.22361 9.55279C2.08284 9.83431 2.08284 10.1657 2.22361 10.4472L2.77639 11.5528C2.91716 11.8343 2.91716 12.1657 2.77639 12.4472L2.22361 13.5528C2.08284 13.8343 2.08284 14.1657 2.22361 14.4472L2.77639 15.5528C2.91716 15.8343 2.91716 16.1657 2.77639 16.4472L2 18" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+
         </div>
-        <div>
-          <label for="name">Nom</label>
-          <input type="text" id="name" placeholder="Votre nom" />
-        </div>
-        <div>
-          <label for="mail">Email</label>
-          <input type="email" id="mail" placeholder="Votre email" />
-        </div>
-        <div>
-          <label for="tel">Téléphone</label>
-          <input type="tel" id="tel" placeholder="Votre téléphone" />
-        </div>
-        <div class="contact-message">
-          <label for="tel">Message</label>
-          <textarea type="tel" id="tel" placeholder="Votre message" cols="30" rows="5"></textarea>
-        </div>
-        <button>ENVOYER</button>
-      </form>
-    </section>
+        <div class="profile"></div>
+      </div>
+  </section>
     <footer>
-      <p>&copy; 2022 - Quentin Colombier - Développeur web full-stack</p>
+      <p>&copy; 2023 - Quentin Colombier - Développeur web full-stack</p>
       <div>
-        <a target="”_blank”" href="https://fr.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+        <a target="”_blank”" href="https://fr.linkedin.com/in/quentin-colombier-695873154"><i class="bi bi-linkedin"></i></a>
         <a target="”_blank”" href="https://github.com/Quentin-CL"><i class="bi bi-github"></i> </a>
       </div>
     </footer>
+
+
+
+    
   </body>
+  <script src="assets/libs/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/js/swiper-bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
   <script src="assets/scripts/navbar.js"></script>
   <script src="assets/scripts/stars.js"></script>
   <script src="assets/scripts/view-project.js"></script>
+  <script src="assets/scripts/utils.js"></script>
+
+
+
 </html>

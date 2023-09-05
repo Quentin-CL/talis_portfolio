@@ -6,11 +6,10 @@
         gap: 10px;
         margin-bottom: 6rem;
         grid-template: 1fr /  1fr 1.5fr;
-        div:last-child{
+        >div:last-child{
             grid-column-start:2 ;
             max-width: 700px;
             img{
-                border-radius: 15px;
                 width: 100%
             }
         };
@@ -23,6 +22,7 @@
     justify-self: center;
     max-width: 500px;
     width: 100%;
+    height: 100%;
     span{
         margin-bottom: auto;
         color: white;
@@ -107,3 +107,82 @@
 .cl-yellow{
     @include apply-color($clYellow)
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid black;
+    .swiper-pagination-bullet{
+        background-color: #aaa;
+        opacity: 0.8;
+    }
+    .swiper-pagination-bullet-active{
+        background-color: #0080FF;
+        opacity: 1;
+    }
+  }
+
+  .swiper-slide {
+
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.text-slide{
+    flex-direction: column;
+    font-family: "inter";
+    align-items: flex-start;
+    text-align: start;
+    strong{
+        font-weight: 700;
+    }
+    > *{
+        padding: 0 2rem;
+    };
+    p{
+        letter-spacing: normal;
+    }
+}
+
+/* Style de la slide */
+.swiper-slide.text-slide {
+    background-color: $gray3; /* Couleur de fond de la slide */
+  }
+  
+  /* Style du titre */
+  .slide-title {
+    font-size: 21px; /* Taille de la police du titre */
+    font-weight: bold; /* Texte en gras */
+    margin-top: 0; /* Supprime la marge supérieure par défaut */
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style de la liste à puces */
+  .slide-list {
+    list-style-type: disc; /* Style de la puce */
+    padding-left: 20px; /* Espacement à gauche des puces */
+  }
+  
+  /* Style des éléments de la liste */
+  .slide-list li {
+    margin-bottom: 10px; /* Espacement entre les éléments de la liste */
+  }
+  
+  /* Style du pied de page */
+  .slide-footer {
+    font-style: italic; /* Texte en italique */
+    color: #666; /* Couleur du texte du pied de page */
+  }
+

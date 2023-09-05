@@ -1,8 +1,13 @@
 const cursors = document.querySelectorAll('.view-project');
-const articles = document.querySelectorAll('#projects article');
+const articles = document.querySelectorAll('#projects .view-project-zone');
 const buttons = document.querySelectorAll(".btn-project")
 let speed = 0.01;
-
+const links = [
+    'https://french-fests.quentincolombier.com/',
+    "https://videv.quentincolombier.com/",
+    'https://threads-jet-rho.vercel.app/',
+    'https://the-resto.quentincolombier.com/'
+];
 
 
 // Setup the cursor tracker on all the articles with a recursive function
@@ -44,7 +49,7 @@ articles.forEach((article, i) => {
 
 // Initialize the position of buttons
 function initializePosition(container) {
-    const offsetTop = container.offsetTop;
+    const offsetTop = container.parentElement.offsetTop;
     const offsetLeft = container.offsetLeft;
     let mouseX = offsetLeft + container.clientWidth * 0.2;
     let mouseY = offsetTop + container.clientHeight;
@@ -52,4 +57,10 @@ function initializePosition(container) {
     let cursorY = container.clientHeight;
     let rotate = 0;
     return [offsetTop, offsetLeft, mouseX, mouseY, cursorX, cursorY, rotate]
-}
+};
+
+buttons.forEach((button, i) => {
+    button.addEventListener('click', () => {
+        window.open(links[i], "_blank")
+    })
+})
